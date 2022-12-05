@@ -1,0 +1,27 @@
+body {
+    background-color: url(img/fond.png);
+}
+
+.bloc-variable{
+  
+    background-image: url(img/img-interne.jpg);
+    background-repeat: no-repeat;
+    background-size: ;
+    height: 10cm;
+    width: ;
+}
+
+.logo{
+    width : 50cm;
+    height : 10cm;
+    padding-top: 0%;
+    max-width : 25cm;
+    max-height : 5cm;
+    top:33px;
+    z-index:1;  
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
