@@ -14,15 +14,10 @@
 
     <?php 
         session_start();
-        var_dump($_SESSION);
-
-        
-
     ?>
     <style>
             .admin {
                 diplay:none;
-                
             }
             </style>
     <div class="loader">
@@ -54,24 +49,13 @@
             <li><a class="blanc" href="login.html">Devis</a></li>
             <li><a class="blanc" href="contact.html">Contact</a></li>
             <li><a class="blanc" href="http://localhost/Saint-Georges-/login.html">Login</a></li>
-            <li class="admin"><a>ADMIN</a></li>
-           <?php 
-           
-           if($_SESSION['name'] = "thomas" ){
-                echo('aaa');
-                ?>
+            <?php if ( isset ($_SESSION['is_admin']) && $_SESSION['is_admin'] == 1) : ?> 
                 
-                <style>
-                .admin {
-                    diplay:block; 
-                }
-                </style>
+                <li class="admin"><a>ADMIN</a></li>
 
-            
-
-                <?php  
-            }  ?>
-            <li><a href="logout.php">Logout</a></li>
+                <?php endif; ?>
+           
+            <li><a class="blanc" href="logout.php">Logout</a></li>
         </ul>
         
     </div>

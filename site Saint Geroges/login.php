@@ -20,21 +20,16 @@ foreach($rows as $row) {
 }
 
 if($row['mail'] == $mail and $row['pass'] == $pass){
-
     session_start();
     $_SESSION['name'] = $row['name'];
     $_SESSION['mail'] = $row['mail'];
+    $_SESSION['is_admin'] = $row['is_admin'];
     header('Location: http://localhost/Saint-Georges-/index.php');
     
 }
 
 else{
-
     header('Location: http://localhost/Saint-Georges-/login.html');
 }
-
-
-
-
 
 ?>
